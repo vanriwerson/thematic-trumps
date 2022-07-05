@@ -7,11 +7,14 @@ export default class Card extends Component {
   }
 
   render() {
-    const { name, strength, agility, intelligence,
+    const { id, name, strength, agility, intelligence,
       charisma, imgLink, isTrumpCard, onButtonClick = this.handleClick } = this.props;
     return(
       <div className="card">
-        <h1 className="card-title">{ name }</h1>
+        <h1 className="card-title">
+          { name }
+          <span className="card-id">{ id }</span>
+        </h1>
         <div className="img-container">
           <img src={ imgLink } alt={ name } className="card-image"/>
           {isTrumpCard && <p className="top-trump">Super Trunfo</p>}
@@ -59,6 +62,7 @@ export default class Card extends Component {
 }
 
 Card.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   strength: PropTypes.number.isRequired,
   agility: PropTypes.number.isRequired,
