@@ -1,0 +1,18 @@
+.card {
+  background-image: linear-gradient(
+    to right bottom,
+  rgb(180, 0, 255) 0%,
+  rgb(180, 180, 180) 30%,
+  rgb(180, 180, 180) 70%,
+  rgb(180,0,255));
+  border: 2px solid rgb(183, 0, 255);
+  border-radius: 8px;
+  height: 480px;
+  margin: 8px auto;
+  width: 360px;
+}
+
+.card-image {
+  border-radius: 8px;
+  width: 240px;
+}

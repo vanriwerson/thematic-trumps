@@ -2,4 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+}
+
+.deck-display h1 {
+  padding: 8px;
+  width: 100%;
 }

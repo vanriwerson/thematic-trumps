@@ -1,9 +1,10 @@
 .App {
-  background-attachment: local;
+  background-attachment: fixed;
   background-image: url('./assets/background.jpg');
-  background-position-x: center;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: space;
   background-size: cover;
   height: 100vh;
+  overflow: scroll;
   width: 100vw;
 }
