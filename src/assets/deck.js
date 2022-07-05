@@ -10,7 +10,7 @@ const deck = [
     intelligence: 30,
     charisma: 50,
     imgLink: kipo,
-    isTrumpCard: false,
+    isTrumpCard: true,
   },
   {
     id: '2A',
