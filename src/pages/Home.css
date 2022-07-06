@@ -1,0 +1,26 @@
+.home {
+  align-items: center;
+  color: var(--light-txt);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.home section {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--dark-bg),
+    var(--heavy-bg));
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px var(--medium-bg);
+  margin: 16px;
+  max-width: 720px;
+  padding: 8px 24px;
+}
+
+.home h1 {
+  text-shadow: 2px 2px 3px var(--medium-bg);
+}

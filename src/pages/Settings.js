@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import saveSettings from '../store/actions';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 class Settings extends Component {
   state = {
@@ -25,33 +27,37 @@ class Settings extends Component {
     const { deckLength } = this.state;
 
     return(
-      <div>
-        <h1>Preferências</h1>
-        
-        <label htmlFor="deckLength">
-          Com quantas cartas deseja jogar?
-          <select
-            id="deckLength"
-            name="deckLength"
-            value={ deckLength }
-            onChange={ (e) => this.handleChange(e) }
-          >
-            <option>8</option>
-            <option>16</option>
-            <option>24</option>
-            <option>32</option>
-          </select>
-        </label>
+      <>
+        <Header />
+        <div className="settings">
+          <h1>Preferências</h1>
+          
+          <label htmlFor="deckLength">
+            Com quantas cartas deseja jogar?
+            <select
+              id="deckLength"
+              name="deckLength"
+              value={ deckLength }
+              onChange={ (e) => this.handleChange(e) }
+            >
+              <option>8</option>
+              <option>16</option>
+              <option>24</option>
+              <option>32</option>
+            </select>
+          </label>
 
-        <p>O número de cartas escolhido pode aumentar ou diminuir o tempo de jogo</p>
-        
-        <button
-          type="button"
-          onClick={ this.handleClick }
-        >
-          Salvar Preferências
-        </button>
-      </div>
+          <p>O número de cartas escolhido pode aumentar ou diminuir o tempo de jogo</p>
+          
+          <button
+            type="button"
+            onClick={ this.handleClick }
+          >
+            Salvar Preferências
+          </button>
+        </div>
+        <Footer />
+      </>
     );
   }
 }
