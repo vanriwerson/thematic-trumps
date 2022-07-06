@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+
+.header {
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--dark-bg),
+    var(--heavy-bg));
+  box-shadow: 2px 2px 3px var(--medium-bg);
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.header h1 {
+  color: var(--light-txt);
+  padding-left: 16px;
+}

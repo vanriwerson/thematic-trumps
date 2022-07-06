@@ -6,7 +6,11 @@
 }
 
 .deck-display-title {
-  background-color: blueviolet;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--medium-bg),
+    var(--dark-bg));
+  color: var(--light-txt);
   padding: 8px;
   width: 100%;
 }
