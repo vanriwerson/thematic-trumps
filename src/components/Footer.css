@@ -1,0 +1,52 @@
+.footer {
+  align-items: center;
+  background-color: var(--dark-bg);
+  color: var(--light-txt);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 8px;
+  width: 100vw;
+}
+
+.socials {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.socials h4 {
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+.socials a {
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  color: inherit;
+  margin: 0 20px;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
+}
+
+.footer img {
+  background-color: var(--light-txt);
+  border-radius: 6px;
+  border: 1px solid var(--light-txt);
+  width: 36px;
+}
+
+.signature {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.signature p {
+  font-size: 1.1em;
+  text-shadow: 2px 2px 3px black;
+}
