@@ -5,7 +5,8 @@
   text-align: center;
 }
 
-.deck-display h1 {
+.deck-display-title {
+  background-color: blueviolet;
   padding: 8px;
   width: 100%;
 }

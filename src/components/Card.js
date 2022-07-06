@@ -20,7 +20,7 @@ export default class Card extends Component {
           <img src={ imgLink } alt={ name } className="card-image"/>
           {isTrumpCard && <p className="top-trump">Super Trunfo</p>}
         </div>
-        <div>
+        <div className="comands-container">
           <button
             type="button"
             value={ strength }

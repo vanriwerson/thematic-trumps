@@ -7,7 +7,7 @@ export default class Deck extends Component {
   render() {
     return(
       <div className="deck-display">
-        <h1>Visualize o baralho Completo</h1>
+        <h1 className="deck-display-title">Visualize o baralho Completo</h1>
         {
           deck.map(({ id, name, strength, agility, intelligence,
             charisma, imgLink, isTrumpCard }) => (
