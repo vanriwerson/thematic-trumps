@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Login from '../components/Login';
 import './Home.css';
 
 export default class Home extends Component {
   render() {
+    const { history } = this.props;
+
     return(
       <>
         <Header />
@@ -20,9 +24,14 @@ export default class Home extends Component {
               <p>Recomendo que acompanhem Kipo mudando o mundo e espero que gostem do jogo</p>
             </section>
           </div>
+          <Login history={ history } />
         </main>
         <Footer />
       </>
     );
   }
 }
+
+Home.propTypes = {
+  history: PropTypes.instanceOf(Array),
+}.isRequired;

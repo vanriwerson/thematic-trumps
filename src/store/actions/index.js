@@ -1,8 +1,14 @@
-import SAVE_SETTINGS from "./actionTypes";
+import {
+  SAVE_SETTINGS,
+  SAVE_PLAYER_DATA,
+} from "./actionTypes";
 
-const saveSettings = (payload) => ({
+export const saveSettings = (payload) => ({
   type: SAVE_SETTINGS,
   payload,
 });
 
-export default saveSettings;
+export const savePlayerData = (payload) => ({
+  type: SAVE_PLAYER_DATA,
+  payload,
+});

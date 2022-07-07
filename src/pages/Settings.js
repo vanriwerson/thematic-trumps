@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import saveSettings from '../store/actions';
+import { saveSettings } from '../store/actions';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 

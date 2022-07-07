@@ -1,3 +1,2 @@
-const SAVE_SETTINGS = 'SAVE_SETTINGS';
-
-export default SAVE_SETTINGS;
+export const SAVE_SETTINGS = 'SAVE_SETTINGS';
+export const SAVE_PLAYER_DATA = 'SAVE_PLAYER_DATA';
