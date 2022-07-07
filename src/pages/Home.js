@@ -8,7 +8,8 @@ export default class Home extends Component {
     return(
       <>
         <Header />
-          <main className="home">
+        <main className="home">
+          <div className="texts">
             <section>
               <h1>Super Trunfo</h1>
               <p>Esse jogo fez parte da minha infância (e da de muita gente ^^) e, agora que já estou um pouco mais avançado nos estudos, sinto-me confiante para fazer essa pequena e justa homenagem. Minha própria releitura do joguinho!</p>
@@ -18,7 +19,8 @@ export default class Home extends Component {
               <p>Essa série animada de Radford Sechrist e Bill Wolkoff (Disponível na Netflix) é para mim igualmente apaixonante e com uma temática importantíssima abordada de forma leve.</p>
               <p>Recomendo que acompanhem Kipo mudando o mundo e espero que gostem do jogo</p>
             </section>
-          </main>
+          </div>
+        </main>
         <Footer />
       </>
     );
